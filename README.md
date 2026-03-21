@@ -27,7 +27,25 @@ All seed data verified as of March 21, 2026.
 - **Admin panel** (password-protected): edit all indicators, time series, situation report
 - **JSON export/import**: download full dataset, edit offline, re-upload
 - **Persistent storage**: all changes saved to localStorage, survive page reloads
-- **Zero build step**: single HTML file with CDN dependencies
+- **Pre-bundled**: React + Recharts compiled to a single `app.js` — no build step needed
+
+## Files
+
+```
+index.html   — Dashboard page (loads app.js)
+app.js       — Bundled React + Recharts application (esbuild, minified)
+README.md    — This file
+```
+
+## Setup on GitHub Pages
+
+1. Push all three files (`index.html`, `app.js`, `README.md`) to the `main` branch
+2. Go to **Settings → Pages → Source: Deploy from branch → main / root**
+3. Dashboard will be live at `https://sachadray.github.io/hormuz-vietnam-tracker/`
+
+## Admin Access
+
+Click ⚙ Admin → enter password → edit indicators, time series, situation report, or import/export JSON data.
 
 ## License
 
