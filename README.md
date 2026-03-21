@@ -29,17 +29,6 @@ All seed data verified as of March 21, 2026.
 - **Persistent storage**: all changes saved to localStorage, survive page reloads
 - **Zero build step**: single HTML file with CDN dependencies
 
-## Setup on GitHub Pages
-
-1. Create a new repo named `hormuz-vietnam-tracker`
-2. Push the `index.html` file to the `main` branch
-3. Go to **Settings → Pages → Source: Deploy from branch → main / root**
-4. Your dashboard will be live at `https://sachadray.github.io/hormuz-vietnam-tracker/`
-
-## Admin Access
-
-Click ⚙ Admin → enter password → edit indicators, time series, situation report, or import/export JSON data.
-
 ## License
 
 Dashboard code: MIT. Data from HormuzTracker.com used under CC BY 4.0.
