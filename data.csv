@@ -1,0 +1,287 @@
+# ══════════════════════════════════════════════════════════════════════════
+# HORMUZ–VIETNAM CRISIS TRACKER — DATA FILE
+# Last updated: 2026-03-21
+#
+# HOW TO UPDATE:
+#   1. Edit values in this file using any text editor or Excel
+#   2. Keep the [sectionName] headers — the dashboard uses them to parse data
+#   3. Numeric values are parsed automatically; text with commas must be quoted
+#   4. Save as CSV (UTF-8) and redeploy alongside index.html and app.js
+# ══════════════════════════════════════════════════════════════════════════
+
+# ── SITUATION REPORT ─────────────────────────────────────────────────────
+
+[sitRep]
+field,value
+text,"The Strait of Hormuz remains effectively closed on Day 22. Brent traded as high as $119/bbl this week before settling near $107. Vietnam enacted an emergency 20% fuel price increase on March 19; RON95 now exceeds 30,000 VND/L. The VN-Index fell below 1,700 before rebounding to 1,813. The Govt has deployed 4-5k VND/L from the Price Stabilization Fund but reserves are running low (~2,600 bn VND remaining). PM Chinh has secured 4 million barrels from partner countries."
+analyst,Crisis Monitoring Unit
+date,"March 21, 2026"
+
+# ── CURRENT INDICATOR VALUES ─────────────────────────────────────────────
+
+[indicators]
+key,value
+brent,107.20
+wti,96.39
+ttf,61.90
+usGasoline,3.11
+hormuzTransits,5
+severityScore,10
+ron95,30690
+diesel,33420
+ron95Base,33690
+dieselBase,37420
+usdvnd,26309
+usdvndFreeMarket,27080
+vnindex,1700
+cpiJan,2.53
+cpiFeb,3.35
+cpiDec,3.48
+fxReserves,79.2
+oilReserve,18
+vix,25.81
+gold,4607
+lastUpdate,2026-03-21
+
+# ── PRE-CRISIS BASELINE VALUES (for % change calculation) ───────────────
+
+[baseline]
+key,value
+brent,68.00
+wti,61.00
+ttf,30.00
+usGasoline,2.97
+hormuzTransits,138
+ron95,18880
+diesel,18453
+usdvnd,25890
+vnindex,1900
+vix,16.20
+gold,4266
+fxReserves,79.3
+oilReserve,18
+cpiFeb,2.94
+severityScore,3
+usdvndFreeMarket,26100
+ron95Base,18880
+dieselBase,18453
+
+# ── CRISIS SEVERITY SUB-SCORES ──────────────────────────────────────────
+
+[severitySub]
+name,score
+Ship Traffic,10
+Oil Prices,10
+Insurance,10
+Carriers,10
+Military,10
+
+# ── HORMUZ SHIP TRANSITS (daily since Feb 28) ───────────────────────────
+
+[transitData]
+date,transits
+Feb 28,45
+Mar 1,3
+Mar 2,0
+Mar 3,0
+Mar 4,0
+Mar 5,1
+Mar 6,2
+Mar 7,0
+Mar 8,1
+Mar 9,0
+Mar 10,3
+Mar 11,2
+Mar 12,1
+Mar 13,4
+Mar 14,3
+Mar 15,5
+Mar 16,2
+Mar 17,4
+Mar 18,6
+Mar 19,3
+Mar 20,5
+Mar 21,5
+
+# ── BRENT & WTI PRICE SERIES ────────────────────────────────────────────
+
+[brentSeries]
+date,brent,wti
+Jan 15,68.5,59.6
+Jan 22,69.1,60.1
+Jan 29,67.8,59.0
+Feb 5,68.9,59.9
+Feb 12,69.2,60.2
+Feb 19,68.5,59.6
+Feb 26,68.8,59.9
+Feb 28,78.4,68.2
+Mar 1,84.7,73.7
+Mar 2,86.3,75.1
+Mar 5,88.9,77.3
+Mar 7,93.0,80.9
+Mar 9,94.0,81.8
+Mar 10,84.6,73.6
+Mar 12,96.2,90.9
+Mar 14,103.1,98.7
+Mar 17,103.0,98.9
+Mar 18,101.0,95.5
+Mar 19,108.5,96.4
+Mar 20,113.4,96.4
+Mar 21,107.2,98.2
+
+# ── CARRIER SUSPENSION STATUS ────────────────────────────────────────────
+
+[carriers]
+name,status,trapped,surcharge
+Maersk,Suspended,12,+$3500/TEU
+MSC,Suspended,15,+$4000/TEU
+CMA CGM,Suspended,8,+$3200/TEU
+COSCO,Suspended,11,+$2800/TEU
+Hapag-Lloyd,Suspended,6,+$3600/TEU
+ONE,Suspended,9,+$3100/TEU
+Evergreen,Suspended,7,+$2900/TEU
+HMM,Suspended,4,+$3300/TEU
+Yang Ming,Suspended,5,+$3000/TEU
+
+# ── CRISIS TIMELINE ──────────────────────────────────────────────────────
+
+[timeline]
+date,event
+Feb 28,"US launches airstrikes on Iranian nuclear facilities; Iran threatens Strait closure"
+Mar 1,IRGC Navy deploys mines and fast boats across Hormuz shipping lanes
+Mar 2,"Ship transits drop to zero; Brent surges past $86/bbl"
+Mar 3,All major carriers announce Hormuz transit suspension
+Mar 5,"Vietnam MOIT emergency fuel price adjustment; RON95 to 22340 VND/L. P&I clubs withdraw war-risk coverage."
+Mar 6,Vietnam Govt issues Resolution 36 on petroleum price stabilization
+Mar 7,IEA coordinates emergency SPR release. Vietnam RON95 jumps to 27047 VND/L
+Mar 9,"EIA confirms Brent at $94/bbl; Israel strikes Iran South Pars gas field"
+Mar 10,"PM Pham Minh Chinh directs fuel price stabilization; Price Stabilization Fund activated"
+Mar 11,"RON95 hits 29120 VND/L; first use of Price Stabilization Fund in 3 years"
+Mar 14,"Govt uses heavy PSF subsidy (4-5k VND/L) holds RON95 at 25575"
+Mar 17,"SBV intervenes; VN-Index falls below 1700. Free market USD/VND hits 27080"
+Mar 19,"RON95 surges 20% to 30690 VND/L; diesel +24% to 33420; PM calls partners for oil supply"
+Mar 20,Brent hits $113.40. Vietnam secures 4M barrels from partners.
+Mar 21,Day 22 of crisis. Goldman warns oil may stay triple-digits for years.
+
+# ── VIETNAM FUEL PRICES (MOIT adjustment dates) ─────────────────────────
+
+[vnFuel]
+date,ron95,diesel
+Feb 5,18880,18453
+Feb 26,20151,19279
+Mar 5,22340,23037
+Mar 7,27047,30239
+Mar 11,29120,30239
+Mar 14,25575,27025
+Mar 19,30690,33420
+
+# ── USD/VND EXCHANGE RATE ────────────────────────────────────────────────
+
+[vnUsdvnd]
+date,value,free
+Jan 1,26298,26500
+Feb 10,25890,26100
+Feb 28,26000,26200
+Mar 7,26050,26400
+Mar 14,26150,26700
+Mar 20,26309,27080
+
+# ── VN-INDEX ─────────────────────────────────────────────────────────────
+
+[vnIndex]
+date,value
+Jan,1860
+Feb,1876
+Mar 3,1876
+Mar 10,1780
+Mar 14,1750
+Mar 19,1699
+Mar 21,1813
+
+# ── VIETNAM CPI (y/y %) ─────────────────────────────────────────────────
+
+[vnCpi]
+month,value
+Jul 25,2.90
+Aug 25,3.20
+Sep 25,2.63
+Oct 25,2.89
+Nov 25,3.58
+Dec 25,3.48
+Jan 26,2.53
+Feb 26,3.35
+
+# ── VIETNAM FX RESERVES (USD bn) — Source: IMF ──────────────────────────
+
+[vnFxReserves]
+period,value
+2023,92.3
+2024,83.1
+2025,79.3
+Jan 2026,79.2
+
+# ── OIL IMPORT DEPENDENCY (% of energy from imports) ────────────────────
+
+[oilDependency]
+country,pct
+Cambodia,100
+Thailand,56
+Philippines,55
+Vietnam,37
+Indonesia,15
+
+# ── STRATEGIC PETROLEUM RESERVES (days of net imports) ───────────────────
+
+[sprData]
+name,days
+Japan,130
+S. Korea,95
+IEA Std,90
+Thailand,36
+Vietnam,18
+
+# ── VIX SERIES ───────────────────────────────────────────────────────────
+
+[gmVix]
+date,value
+Jan 15,16.2
+Feb 1,15.8
+Feb 15,16.5
+Feb 28,22.4
+Mar 7,28.1
+Mar 14,26.5
+Mar 20,24.06
+Mar 21,25.81
+
+# ── GOLD PRICE SERIES (USD/oz) ───────────────────────────────────────────
+
+[gmGold]
+date,value
+Jan 15,4266
+Feb 1,4404
+Feb 15,5120
+Feb 28,4800
+Mar 7,4750
+Mar 14,4860
+Mar 19,4551
+Mar 21,4607
+
+# ── US NATURAL GAS (Henry Hub, USD/MMBtu) ────────────────────────────────
+
+[gmGas]
+date,value
+Jan 15,2.95
+Feb 1,2.97
+Feb 15,2.99
+Feb 28,3.15
+Mar 7,3.10
+Mar 14,3.11
+Mar 21,3.16
+
+# ── GLOBAL SUPPLY CHAIN PRESSURE INDEX (est. NY Fed GSCPI, σ) ───────────
+
+[gmGscpi]
+date,value
+Jan,0.8
+Feb,1.2
+Mar (est.),3.5

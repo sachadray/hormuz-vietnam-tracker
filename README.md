@@ -1,33 +1,27 @@
 # Hormuz Crisis — Vietnam Impact Tracker
 
-Real-time dashboard tracking the US–Iran conflict's economic impact on Vietnam. Monitors oil prices, fuel costs, exchange rates, stock market, inflation, and strategic reserves.
+Real-time dashboard tracking the US–Iran conflict's economic impact on Vietnam.
 
 **Live:** [https://sachadray.github.io/hormuz-vietnam-tracker/](https://sachadray.github.io/hormuz-vietnam-tracker/)
 
-## Data Sources
+## How to Update Data
 
-| Data | Source | License |
-|---|---|---|
-| Crisis severity, ship transits, carriers, insurance, timeline | [HormuzTracker.com](https://hormuztracker.com) | CC BY 4.0 |
-| Brent & WTI crude oil | oilpriceapi.com (live fetch) | Free API |
-| Vietnam fuel prices (RON95, Diesel) | MOIT / Petrolimex | Public data |
-| USD/VND exchange rate | SBV / TradingEconomics | Public data |
-| VN-Index | HoSE | Public data |
-| CPI | GSO (National Statistics Office) | Public data |
-| VIX | CBOE | Public data |
-| Gold | Market data | Public data |
+All dashboard data lives in a single **`data.csv`** file. To update:
 
-All seed data verified as of March 21, 2026.
+1. Open `data.csv` in any text editor, Excel, or Google Sheets
+2. Edit values (indicators, time series, situation report, etc.)
+3. Save and push to GitHub — the dashboard reads `data.csv` at page load
 
-## Features
+The CSV uses `[sectionName]` headers to organize data into labeled sections. Comments (lines starting with `#`) are ignored.
 
-- **3 tabs**: Crisis Overview, Global Markets, Vietnam
-- **Auto-scaling charts** with threshold zones (green/amber/red)
-- **Live oil price fetch** from oilpriceapi.com with fallback to seed data
-- **Admin panel** (password-protected): edit all indicators, time series, situation report
-- **JSON export/import**: download full dataset, edit offline, re-upload
-- **Persistent storage**: all changes saved to localStorage, survive page reloads
-- **Pre-bundled**: React + Recharts compiled to a single `app.js` — no build step needed
+## Files
+
+```
+index.html   — Dashboard HTML shell
+app.js       — Bundled React + Recharts application
+data.csv     — All dashboard data (edit this to update)
+README.md    — This file
+```
 
 ## License
 
