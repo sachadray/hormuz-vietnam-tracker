@@ -154,7 +154,7 @@ Mar-24,Brent falls to $98.83 and WTI to $90.67 continuing the retreat from Trump
 # ── USD/VND (Vietcombank spot + SBV reference + ±5% band + free market) ──
 # Sources: Haver (Vietcombank X582USM, SBV X582USD), tygiausd.org (free mkt/black market)
 
-[vnUsdvnd],,,,,
+[vnUsdvnd]
 date,value,ref,bandHi,bandLo,free
 23-Feb-26,25995,25051,26303.55,27618.7275,26709
 24-Feb-26,26120,25053,26305.65,27620.9325,26908
@@ -249,19 +249,19 @@ Jan-26,79.2
 
 [oilDependency]
 country,pct
+Philippines,95
+Thailand,90
+Vietnam,64
+Indonesia,48
 Cambodia,100
-Thailand,56
-Philippines,55
-Vietnam,37
-Indonesia,15
 
 [sprData]
 name,days
-Japan,130
-S. Korea,95
+Japan,250
+S. Korea,180
 IEA Std,90
-Thailand,36
-Vietnam,18
+Thailand,95
+Vietnam,30
 
 [gmVix]
 date,value
