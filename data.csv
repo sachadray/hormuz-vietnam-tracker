@@ -152,8 +152,8 @@ Mar-24,Brent falls to $98.83 and WTI to $90.67 continuing the retreat from Trump
 # ── VIETNAM FUEL PRICES (MOIT adjustment dates — Haver Analytics) ────────
 
 
-# ── USD/VND (Vietcombank spot + SBV reference + ±5% band + free market) ──
-# Sources: Haver (Vietcombank X582USM, SBV X582USD), tygiausd.org (free mkt/black market)
+# ── USD/VND (Vietcombank spot + SBV reference + ±5% band + unofficial market) ──
+# Sources: Haver (Vietcombank X582USM, SBV X582USD), egcurrency.com (free mkt/black market)
 Mar-25,Vietnam MOIT adjusts fuel prices downward; RON95 to 29,957 VND/L; diesel spikes to 37,899 VND/L as product shortages persist.
 Mar-26,RON95 cut further to 24,332 VND/L; diesel 35,440 VND/L. VN-Index falls to 1,637 (-1.28%). TTF eases to ~55 EUR/MWh.
 Mar-27,VN-Index rebounds 1.71% to 1,672.80. Brent surges to $112.57 as Trump announces April 6 Iran deadline. VIX 31.05. Gold $4,493. SBV rate holds 25,100; Unofficial market VND/USD 28,114.
