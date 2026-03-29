@@ -4,7 +4,7 @@
 
 [sitRep]
 field,value
-text,"Brent crude surged to $112.57/bbl on Friday March 28 (WTI $99.64) as Trump's April 6 ultimatum to Iran drove renewed escalation fears — reversing the earlier de-escalation selloff. VIX rose to 31.05. Gold at $4,493/oz (Kitco). TTF eased to 55.22 EUR/MWh. US gasoline: $3.981/gal (AAA). Vietnam fuel prices cut on March 26 as MOIT tracked lower global oil: RON95 fell to 24,332 VND/L from its 30,690 peak; diesel to 35,440 VND/L. VN-Index recovered 1.71% to 1,672.80 on March 27 after heavy losses. Vietcombank USD/VND: 26,230 (Mar 27); free-market rate 28,024 (Mar 29). Hormuz remains effectively closed on Day 29. Iran's April 6 deadline is the next key inflection point."
+text,"Brent crude surged to $112.57/bbl on Friday March 28 (WTI $99.64) as Trump's April 6 ultimatum to Iran drove renewed escalation fears — reversing the earlier de-escalation selloff. VIX rose to 31.05. Gold at $4,493/oz (Kitco). TTF eased to 55.22 EUR/MWh. US gasoline: $3.981/gal (AAA). Vietnam fuel prices cut on March 26 as MOIT tracked lower global oil: RON95 fell to 24,332 VND/L from its 30,690 peak; diesel to 35,440 VND/L. VN-Index recovered 1.71% to 1,672.80 on March 27 after heavy losses. Vietcombank USD/VND: 26,230 (Mar 27); unofficial market rate 28,024 (Mar 29). Hormuz remains effectively closed on Day 29. Iran's April 6 deadline is the next key inflection point."
 analyst,Crisis Monitoring Unit
 date,"March 29, 2026"
 
@@ -141,13 +141,13 @@ Mar-09,EIA confirms Brent at $94/bbl; Israel strikes Iran South Pars gas field
 Mar-10,PM Pham Minh Chinh directs fuel price stabilization; Price Stabilization Fund activated. RON95 briefly hits 29120.
 Mar-11,Extraordinary adjustment: RON95 pulled back to 25240 (heavy PSF subsidy)
 Mar-12,RON95 at 25575; diesel at 27025
-Mar-17,SBV intervenes; VN-Index falls below 1700. Free market USD/VND hits 27096
+Mar-17,SBV intervenes; VN-Index falls below 1700. Unofficial market USD/VND hits 27096
 Mar-19,RON95 surges 20% to 30690 VND/L; diesel +24% to 33420; PM calls partners for oil supply
 Mar-20,Brent hits $113.40. Vietnam secures 4M barrels from partners. VN-Index drops to 1648.
 Mar-21,Day 22 of crisis. Goldman warns oil may stay triple-digits for years.
-Mar-22,Free market USD/VND hits 27307. SBV reference rate unchanged at 25085. Iran says it will target US/Israeli assets if energy facilities struck.
+Mar-22,Unofficial market USD/VND hits 27307. SBV reference rate unchanged at 25085. Iran says it will target US/Israeli assets if energy facilities struck.
 Mar-23,VN-Index falls 2.08% to 1614. SBV ref rate +5 VND to 25090. Vietcombank sell hits band ceiling 26344. Chợ đen USD/VND surges to 27950-28000. Gold near $4373 (-10% weekly). Oil steady as markets weigh Iran-US rhetoric.
-Mar-24,Brent falls to $98.83 and WTI to $90.67 continuing the retreat from Trump's Iran strike postponement. S&P 500 +1.4%. VIX eases to 24.85. Gold slides further to $4,320. VN-Index falls 0.44% to 1,606.61. Free-market VND firms to 27,226-27,356 at 4:30 AM before partial reversal.
+Mar-24,Brent falls to $98.83 and WTI to $90.67 continuing the retreat from Trump's Iran strike postponement. S&P 500 +1.4%. VIX eases to 24.85. Gold slides further to $4,320. VN-Index falls 0.44% to 1,606.61. Unofficial-market VND firms to 27,226-27,356 at 4:30 AM before partial reversal.
 
 # ── VIETNAM FUEL PRICES (MOIT adjustment dates — Haver Analytics) ────────
 
@@ -156,7 +156,7 @@ Mar-24,Brent falls to $98.83 and WTI to $90.67 continuing the retreat from Trump
 # Sources: Haver (Vietcombank X582USM, SBV X582USD), tygiausd.org (free mkt/black market)
 Mar-25,Vietnam MOIT adjusts fuel prices downward; RON95 to 29,957 VND/L; diesel spikes to 37,899 VND/L as product shortages persist.
 Mar-26,RON95 cut further to 24,332 VND/L; diesel 35,440 VND/L. VN-Index falls to 1,637 (-1.28%). TTF eases to ~55 EUR/MWh.
-Mar-27,VN-Index rebounds 1.71% to 1,672.80. Brent surges to $112.57 as Trump announces April 6 Iran deadline. VIX 31.05. Gold $4,493. SBV rate holds 25,100; free-market VND/USD 28,114.
+Mar-27,VN-Index rebounds 1.71% to 1,672.80. Brent surges to $112.57 as Trump announces April 6 Iran deadline. VIX 31.05. Gold $4,493. SBV rate holds 25,100; Unofficial market VND/USD 28,114.
 Mar-28,Trump's April 6 deadline to Iran to reopen Hormuz confirmed. Brent settles at $112.57, WTI $99.64.
 
 [vnFuel]
@@ -223,6 +223,7 @@ date,ron95,diesel
 25-Mar-26,29957,37899
 26-Mar-26,24332,35440
 27-Mar-26,24332,35440
+
 [vnUsdvnd]
 date,value,ref,bandHi,bandLo,free
 23-Feb-26,25995,25051,26303.55,27618.7275,26709
@@ -230,22 +231,22 @@ date,value,ref,bandHi,bandLo,free
 25-Feb-26,26134,25057,26309.85,27625.3425,26756
 26-Feb-26,26085,25051,26303.55,27618.7275,26701
 27-Feb-26,26025,25044,26296.2,27611.01,26718
-28-Feb-26,---,---,,,26835
-1-Mar-26,---,---,,,26816
+28-Feb-26,,,,,26835
+1-Mar-26,,,,,26816
 2-Mar-26,26094,25038,26289.9,s,26793
 3-Mar-26,26133,25046,26298.3,27613.215,25629
 4-Mar-26,26139,25052,26304.6,27619.83,25675
 5-Mar-26,26142,25055,26307.75,27623.1375,26904
 6-Mar-26,26154,25057,26309.85,27625.3425,27015
-7-Mar-26,---,---,,,27180
-8-Mar-26,---,---,,,27197
+7-Mar-26,,,,,27180
+8-Mar-26,,,,,27197
 9-Mar-26,26176,25059,26311.95,27627.5475,27248
 10-Mar-26,26170,25062,26315.1,27630.855,25573
 11-Mar-26,26156,25059,26311.95,27627.5475,27194
 12-Mar-26,26179,25061,26314.05,27629.7525,27161
 13-Mar-26,26183,25065,26318.25,27634.1625,27234
-14-Mar-26,---,---,,,27383
-15-Mar-26,---,---,,,27206
+14-Mar-26,,,,,27383
+15-Mar-26,,,,,27206
 16-Mar-26,26186,25068,26321.4,27637.47,27389
 17-Mar-26,26186,25068,26321.4,27637.47,27426
 18-Mar-26,26185,25067,26320.35,27636.3675,27503
@@ -255,12 +256,19 @@ date,value,ref,bandHi,bandLo,free
 22-Mar-26,,,,,28005
 23-Mar-26,,,,,28083
 24-Mar-26,26344,25090,26344.5,23836,27291
+25-Mar-26, 26234 ,  25104 , 26359, 23849, 27890
+26-Mar-26, 26232,  25102, 26357, 23847, 27967
+27-Mar-26, 26230, 25100, 26355, 23845, 28114
 
 
 
+ 
+ 
+ 
 
-
-
+ 	 
+ 	 
+ 	 
 
 
 
