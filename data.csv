@@ -8,29 +8,30 @@ text,"Brent crude surged to $112.57/bbl on Friday March 27 (WTI $99.64) as Trump
 analyst,Crisis Monitoring Unit
 date,"March 31, 2026"
 
-[indicators]
-key,value
-brent,112.57
-wti,99.64
-ttf,55.22
-usGasoline,3.981
-hormuzTransits,5
-severityScore,10
-ron95,24332
-diesel,35440
-ron95Base,33690
-dieselBase,37420
-usdvnd,26230
-usdvndFreeMarket,28024
-vnindex,1672.8
-cpiJan,2.53
-cpiFeb,3.35
-cpiDec,3.48
-fxReserves,79.2
-oilReserve,30
-vix,31.05
-gold,4524
-lastUpdate,29/3/26
+
+[indicators],,,,,,,,
+key,value,,,,,,,
+brent,115.35,,,,,,,
+wti,102.88,,,,,,,
+ttf,55.80,,,,,,,
+usGasoline,4.018,,,,,,,
+hormuzTransits,5,,,,,,,
+severityScore,10,,,,,,,
+ron95,24332,,,,,,,
+diesel,35440,,,,,,,
+ron95Base,33690,,,,,,,
+dieselBase,37420,,,,,,,
+usdvnd,26232,,,,,,,
+usdvndFreeMarket,28066,,,,,,,
+vnindex,1650,,,,,,,
+cpiJan,2.53,,,,,,,
+cpiFeb,3.35,,,,,,,
+cpiDec,3.48,,,,,,,
+fxReserves,79.2,,,,,,,
+oilReserve,30,,,,,,,
+vix,30.61,,,,,,,
+gold,4567,,,,,,,
+lastUpdate,31/3/26,,,,,,,
 
 [baseline]
 key,value
@@ -317,6 +318,7 @@ Mar-23,26.78
 Mar-24,24.85
 Mar-26,27.44
 Mar-27,31.05
+Mar-30,30.61
 
 [gmGold]
 date,value
