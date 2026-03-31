@@ -1,12 +1,12 @@
 # HORMUZ-VIETNAM CRISIS TRACKER — DATA FILE
-# Last updated: 2026-03-29
+# Last updated: 2026-03-31
 # Edit values below and commit to Git to update the dashboard.
 
 [sitRep]
 field,value
 text,"Brent crude surged to $112.57/bbl on Friday March 27 (WTI $99.64) as Trump's April 6 ultimatum to Iran drove renewed escalation fears — reversing the earlier de-escalation selloff. VIX rose to 31.05. Global gold prices set at $4,493/oz (Kitco). TTF eased to 55.22 EUR/MWh. US gasoline: $3.981/gal (AAA). Vietnam fuel prices cut on March 26 as advance funding for the fuel price stabilization fund were secured: RON95 fell to 24,332 VND/L from its 30,690 peak; diesel to 35,440 VND/L. VN-Index recovered 1.71% to 1,672.80 on March 27 after heavy losses. Vietcombank USD/VND: 26,230 (Mar 27); unofficial market rate 28,024 (Mar 29). Hormuz remains effectively closed on Day 29. Iran's April 6 deadline is the next key inflection point."
 analyst,Crisis Monitoring Unit
-date,"March 29, 2026"
+date,"March 31, 2026"
 
 [indicators]
 key,value
